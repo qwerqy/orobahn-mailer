@@ -1,3 +1,3 @@
 {
-  "body": "{\"name\": \"Sender Name\",\"subject\": \"I send you a message\", \"reply_to\": \"sender@email.com\",\"message\": \"Sender message\"}"
+  "body": "{\"name\": \"Sender Name\",\"subject\": \"I send you a message\", \"email\": \"sender@email.com\",\"message\": \"Sender message\"}"
 }

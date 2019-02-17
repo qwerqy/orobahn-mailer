@@ -10,7 +10,7 @@ This is the mailer for the site [aminroslan.com](https://aminroslan.com)'s Conta
 
 ## Testing
 
-- Run `yarn sls invoke local --function staticSiteMailer --path data.json`
+- Run `yarn sls invoke local --function orobahnMailer --path data.json`
 
 ## Deploy
 

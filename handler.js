@@ -8,7 +8,7 @@ function sendEmail(formData, callback) {
   // Send the email
   const emailParams = {
     Source: "amnrsln.plus@gmail.com", // SES SENDING EMAIL
-    ReplyToAddresses: [formData.reply_to],
+    ReplyToAddresses: [formData.email],
     Destination: {
       ToAddresses: ["amnrsln@gmail.com"] // SES RECEIVING EMAIL
     },
@@ -19,7 +19,7 @@ function sendEmail(formData, callback) {
           Data: `
           Subject: ${formData.subject}
           Name: ${formData.name}
-          Email: ${formData.reply_to}\n
+          Email: ${formData.email}\n
           ${formData.message}`
         }
       },
