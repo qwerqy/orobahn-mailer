@@ -40,8 +40,9 @@ module.exports.orobahnMailer = (event, context, callback) => {
     const response = {
       statusCode: err ? 500 : 200,
       headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "https://aminroslan.com"
+        "Access-Control-Allow-Origin": "https://aminroslan.com",
+        "Access-Control-Allow-Headers": "x-requested-with",
+        "Access-Control-Allow-Credentials": true
       },
       body: JSON.stringify({
         message: err ? err.message : data
